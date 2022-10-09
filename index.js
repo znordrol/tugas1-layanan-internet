@@ -134,11 +134,17 @@ input5.addEventListener('input', () => {
     ans5.innerHTML = `KPK = ${lcm} FPB = ${gcd}`;
 });
 
-input7.addEventListener('input', () => {
+const question7Handler = () => {
     const s = input7.value;
     const search = input7search.value;
-    ans7.innerHTML = `Terdapat ${s.split(search).length - 1} kali kemunculan "${search}" pada input`;
-});
+    ans7.innerHTML = `Terdapat ${
+        s.split(search).length - 1
+    } kali kemunculan "${search}" pada input`;
+}
+
+input7.addEventListener('input', question7Handler);
+
+input7search.addEventListener('input', question7Handler);
 
 const calcNumbers = document.querySelectorAll('[data-number]');
 const calcOps = document.querySelectorAll('[data-operator]');
