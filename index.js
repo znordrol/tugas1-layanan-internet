@@ -134,6 +134,12 @@ input5.addEventListener('input', () => {
     ans5.innerHTML = `KPK = ${lcm} FPB = ${gcd}`;
 });
 
+input6.addEventListener('input', () => {
+    const nums = input6.value.split("");
+    const perms = permute(nums)
+    ans6.innerHTML = perms.map((v) => v.join('')).join(' ');
+});
+
 const question7Handler = () => {
     const s = input7.value;
     const search = input7search.value;
@@ -145,6 +151,9 @@ const question7Handler = () => {
 input7.addEventListener('input', question7Handler);
 
 input7search.addEventListener('input', question7Handler);
+
+
+// Calculator
 
 const calcNumbers = document.querySelectorAll('[data-number]');
 const calcOps = document.querySelectorAll('[data-operator]');
