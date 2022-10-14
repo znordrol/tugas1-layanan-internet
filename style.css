@@ -1,8 +1,12 @@
-body {
+.calculator-container {
     background-color: #000;
     color: white;
     font-size: xx-large;
     margin: 0;
+}
+
+.link {
+    font-size: 20px;
 }
 
 .header {
@@ -10,8 +14,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #707070;
     margin-bottom: 1rem;
+    font-size: 30px;
 }
 
 .calculator-container {
